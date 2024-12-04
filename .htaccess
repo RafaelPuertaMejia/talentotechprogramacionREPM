@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /PhpProjectPPIAmericana/
+
+# Redirigir todas las solicitudes al controlador frontal (index.php)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+
